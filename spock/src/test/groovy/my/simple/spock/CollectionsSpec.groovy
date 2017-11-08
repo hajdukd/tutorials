@@ -79,6 +79,7 @@ class CollectionsSpec extends Specification {
         GroovyCastException e = thrown()
     }
 
+
     List<Integer> javaList() {
         final List<Integer> list = new ArrayList<>();
         list.add(1);
