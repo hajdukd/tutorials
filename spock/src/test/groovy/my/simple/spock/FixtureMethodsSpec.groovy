@@ -2,8 +2,10 @@ package my.simple.spock
 
 import spock.lang.Specification
 
-
-class SettingUpTestsSpec extends Specification {
+/**
+ * Docs http://spockframework.org/
+ */
+class FixtureMethodsSpec extends Specification {
 
     def setup(){
         println "setup"
@@ -21,8 +23,13 @@ class SettingUpTestsSpec extends Specification {
         println "cleanupSpec"
     }
 
-    def 'Very important test'(){
+    def 'Test Specification'(){
         expect:
-        println "Very important test"
+        println "Test Specification"
     }
+
+//    def 'Test Other Specification'(){
+//        expect:
+//        println "Test Other Specification"
+//    }
 }
