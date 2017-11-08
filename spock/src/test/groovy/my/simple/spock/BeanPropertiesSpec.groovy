@@ -35,7 +35,7 @@ class BeanPropertiesSpec extends Specification {
         then:
         dto.name == "jasio"
         dto.description == null
-        dto.value == 0
+        dto.value == null
     }
 
     def aSimpleDtoObject(params = [name: "default", description: "default", value: 1]) {

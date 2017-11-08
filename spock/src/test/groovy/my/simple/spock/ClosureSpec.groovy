@@ -31,7 +31,7 @@ class ClosureSpec extends Specification {
         def expected = [second: "cat", third: "man"]
 
         when:
-        def result = map.findAll { it -> it.value.contains("a") }
+        def result = map.findAll { it.value.contains("a") }
 
         then:
         result == expected

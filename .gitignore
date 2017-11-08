@@ -1,5 +1,5 @@
 # Self climed
-/target/**
+**/target/**
 .idea/**
 **.iml
 # Compiled class file
