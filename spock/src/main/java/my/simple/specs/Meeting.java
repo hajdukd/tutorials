@@ -6,7 +6,9 @@ import java.util.List;
 import static java.util.stream.Collectors.joining;
 
 /**
- * Docs http://spockframework.org/
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
  */
 class Meeting {
 

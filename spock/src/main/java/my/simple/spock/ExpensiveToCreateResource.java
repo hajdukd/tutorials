@@ -1,5 +1,10 @@
 package my.simple.spock;
 
+/**
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
+ */
 class ExpensiveToCreateResource {
 
     public ExpensiveToCreateResource() {

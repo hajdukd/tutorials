@@ -4,7 +4,9 @@ import org.codehaus.groovy.runtime.typehandling.GroovyCastException
 import spock.lang.Specification
 
 /**
- * Docs http://spockframework.org/
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
  */
 class CollectionsSpec extends Specification {
 

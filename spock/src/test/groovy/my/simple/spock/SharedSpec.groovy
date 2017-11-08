@@ -3,7 +3,11 @@ package my.simple.spock
 import spock.lang.Shared
 import spock.lang.Specification
 
-
+/**
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
+ */
 class SharedSpec extends Specification {
 
     /**

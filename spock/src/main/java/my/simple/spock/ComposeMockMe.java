@@ -1,7 +1,9 @@
 package my.simple.spock;
 
 /**
- * Docs http://spockframework.org/
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
  */
 class ComposeMockMe {
 

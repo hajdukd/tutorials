@@ -13,18 +13,32 @@
         <module>spock</module>
     </modules>
 
+    <properties>
+        <cglib-nodep.version>3.2.4</cglib-nodep.version>
+        <spock-core.version>1.1-groovy-2.4</spock-core.version>
+        <groovy-all.version>2.4.10</groovy-all.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.spockframework</groupId>
                 <artifactId>spock-core</artifactId>
-                <version>1.1-groovy-2.4</version>
+                <version>${spock-core.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
-                <version>2.4.10</version>
+                <version>${groovy-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib-nodep</artifactId>
+                <version>${cglib-nodep.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

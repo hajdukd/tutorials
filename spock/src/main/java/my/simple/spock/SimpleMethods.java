@@ -3,7 +3,9 @@ package my.simple.spock;
 import static java.lang.String.format;
 
 /**
- * Docs http://spockframework.org/
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
  */
 class SimpleMethods {
 

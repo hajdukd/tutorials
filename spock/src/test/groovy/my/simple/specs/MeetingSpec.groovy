@@ -3,9 +3,9 @@ package my.simple.specs
 import spock.lang.Specification
 
 /**
- * Learning test
- *
- * Docs http://spockframework.org/
+ * Docs:
+ * http://spockframework.org/
+ * http://docs.groovy-lang.org
  */
 class MeetingSpec extends Specification {
 
