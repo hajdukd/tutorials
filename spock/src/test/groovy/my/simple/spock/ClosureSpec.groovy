@@ -1,7 +1,6 @@
 package my.simple.spock
 
 import spock.lang.Specification
-import spock.lang.Unroll
 
 /**
  * Docs:
