@@ -12,19 +12,19 @@ class SimplePhoneFactorySpec extends Specification {
     def "Should create #type phone"() {
         given:
         def factory = new SimplePhoneFactory()
-        and:
-        def phone = factory.createPhone(type)
 
         when:
+        def phone = factory.createPhone(type)
         def calling = phone.call("John")
 
         then:
+        phone.class == clazz
         calling == expected
 
         where:
-        type      | expected
-        "iphone"  | IPhone.CALLING + "John"
-        "samsung" | Samsung.CALLING + "John"
+        type      | clazz         | expected
+        "iphone"  | IPhone.class  | IPhone.CALLING + "John"
+        "samsung" | Samsung.class | Samsung.CALLING + "John"
     }
 
     def "Should throw IllegalArgumentException in case of unknown phone type"() {
