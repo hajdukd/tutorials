@@ -10,13 +10,12 @@ class PhoneFactorySpec extends Specification {
 
     @Unroll
     def "Should create specific phone using provided PhoneFactory"() {
+        //the client is the PhoneFactory and object instantiation responsibility is moved to subclasses
         given:
-        // this could be for example instantiating new client with specific factory implementation (like new PhoneStore(factory))
         PhoneFactory factory = provideFactory()
-        def phone = factory.createPhone()
 
         when:
-        def calling = phone.call("John")
+        def calling = factory.qualityTestCall("John")
 
         then:
         calling == expected

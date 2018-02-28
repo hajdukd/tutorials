@@ -2,7 +2,13 @@ package dh.tutorials.factory.method;
 
 import dh.tutorials.factory.Phone;
 
-public interface PhoneFactory {
+public abstract class PhoneFactory {
 
-    Phone createPhone();
+    public String qualityTestCall(
+        final String someone) {
+        final Phone phone = createPhone();
+        return phone.call(someone);
+    }
+
+    public abstract Phone createPhone();
 }
