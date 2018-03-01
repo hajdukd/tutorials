@@ -25,13 +25,13 @@ abstract class Car {
 
     private Car initCar() {
         this.body = factory.produceBody();
-        this.wheels = factory.produceWheels();
+        this.wheels = factory.produceWheels("12");
         this.engine = factory.produceEngine();
         this.chassis = factory.produceChassis();
         return this;
     }
 
-    public void examineCar(){
+    public void describeYourself(){
         final StringJoiner joiner = new StringJoiner("\n");
         joiner.add(body.operation());
         joiner.add(wheels.operation());

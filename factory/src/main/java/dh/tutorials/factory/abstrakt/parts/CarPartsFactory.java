@@ -7,7 +7,7 @@ import dh.tutorials.factory.abstrakt.parts.wheels.Wheels;
 
 public interface CarPartsFactory {
 
-    Wheels produceWheels();
+    Wheels produceWheels(String size);
 
     Body produceBody();
 

@@ -12,8 +12,10 @@ import dh.tutorials.factory.abstrakt.parts.wheels.Wheels;
 public class ExpensiveCarPartsFactory implements CarPartsFactory {
 
     @Override
-    public Wheels produceWheels() {
-        return new ExpensiveWheels();
+    public Wheels produceWheels(String size) {
+        ExpensiveWheels wheels =  new ExpensiveWheels();
+        wheels.setSize(size);
+        return wheels;
     }
 
     @Override

@@ -2,7 +2,7 @@ package dh.tutorials.factory.method;
 
 import dh.tutorials.factory.Phone;
 
-public abstract class PhoneFactory {
+public abstract class CallCentre {
 
     public String qualityTestCall(
         final String someone) {

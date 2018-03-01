@@ -3,7 +3,7 @@ package dh.tutorials.factory.method;
 import dh.tutorials.factory.Phone;
 import dh.tutorials.factory.Samsung;
 
-public class SamsungFactory extends PhoneFactory {
+public class SamsungCallCentre extends CallCentre {
 
     @Override
     public Phone createPhone() {

@@ -12,7 +12,7 @@ import dh.tutorials.factory.abstrakt.parts.wheels.Wheels;
 public class CheapCarPartsFactory implements CarPartsFactory {
 
     @Override
-    public Wheels produceWheels() {
+    public Wheels produceWheels(String size) {
         return new CheapWheels();
     }
 
