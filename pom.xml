@@ -12,6 +12,7 @@
     <modules>
         <module>spock</module>
         <module>factory</module>
+        <module>code-review</module>
     </modules>
 
     <properties>
